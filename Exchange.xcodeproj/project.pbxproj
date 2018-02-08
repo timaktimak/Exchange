@@ -1,0 +1,792 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E103541202A401200A59FF4 /* FSPagerViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E103540202A401200A59FF4 /* FSPagerViewExtensions.swift */; };
+		2E103543202A575800A59FF4 /* ExchangeModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E103542202A575800A59FF4 /* ExchangeModelTests.swift */; };
+		2E103546202A5ABB00A59FF4 /* ExchangeCurrencyViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E103545202A5ABB00A59FF4 /* ExchangeCurrencyViewModelTests.swift */; };
+		2E1218AD202726B100B9DA4E /* DecimalExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1218AC202726B100B9DA4E /* DecimalExtensionsTests.swift */; };
+		2E33142C20147EBF007C0167 /* XMLRatesParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E33142B20147EBF007C0167 /* XMLRatesParser.swift */; };
+		2E45AB8B2016834300D5F193 /* ExchangeCurrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E45AB8A2016834300D5F193 /* ExchangeCurrencyView.swift */; };
+		2E45AB8D2016834B00D5F193 /* ExchangeCurrencyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E45AB8C2016834B00D5F193 /* ExchangeCurrencyView.xib */; };
+		2E478812201FCED900B8071B /* NoActionsTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E478811201FCED900B8071B /* NoActionsTextField.swift */; };
+		2E6F9A06202CEDA9001BCEC8 /* ExchangeTestsUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6F9A05202CEDA9001BCEC8 /* ExchangeTestsUtility.swift */; };
+		2E92BAD22017D2B80061DFF1 /* rates_valid.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2E92BAD12017D2B80061DFF1 /* rates_valid.xml */; };
+		2E92BAD42017DA000061DFF1 /* rates_invalid.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2E92BAD32017DA000061DFF1 /* rates_invalid.xml */; };
+		2E9CD5272014EE260050DD43 /* GetExchangeRatesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9CD5262014EE260050DD43 /* GetExchangeRatesService.swift */; };
+		2EA705DD2011073000922891 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA705DC2011073000922891 /* AppDelegate.swift */; };
+		2EA705E42011073000922891 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EA705E32011073000922891 /* Assets.xcassets */; };
+		2EA705E72011073000922891 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EA705E52011073000922891 /* LaunchScreen.storyboard */; };
+		2EA705FF2013453200922891 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA705FE2013453200922891 /* NetworkClient.swift */; };
+		2EB538812016862700BAC105 /* XMLRatesParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB538802016862700BAC105 /* XMLRatesParserTests.swift */; };
+		2ECA956A2027B09200736441 /* FSPagerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECA95632027B09200736441 /* FSPagerCollectionView.swift */; };
+		2ECA956B2027B09200736441 /* FSPagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECA95642027B09200736441 /* FSPagerView.swift */; };
+		2ECA956C2027B09200736441 /* FSPagerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECA95652027B09200736441 /* FSPagerViewCell.swift */; };
+		2ECA956D2027B09200736441 /* FSPagerViewLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECA95662027B09200736441 /* FSPagerViewLayoutAttributes.swift */; };
+		2ECA956E2027B09200736441 /* FSPageViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECA95672027B09200736441 /* FSPageViewLayout.swift */; };
+		2ECA956F2027B09200736441 /* FSPageViewTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECA95682027B09200736441 /* FSPageViewTransformer.swift */; };
+		2ECA95712027B0F500736441 /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECA95702027B0F500736441 /* CarouselView.swift */; };
+		2ECA95732027B34300736441 /* CarouselCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECA95722027B34300736441 /* CarouselCell.swift */; };
+		2ECA95892028EBA600736441 /* ExchangeSide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECA95882028EBA600736441 /* ExchangeSide.swift */; };
+		2ECA958B2028FD4A00736441 /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECA958A2028FD4A00736441 /* StringExtensionsTests.swift */; };
+		2ECA958D2029071500736441 /* MoneyStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECA958C2029071500736441 /* MoneyStoreTests.swift */; };
+		2ECA958F20290C2700736441 /* AccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECA958E20290C2700736441 /* AccountTests.swift */; };
+		2ED02BD1202B5CDB00ADD995 /* ExchangeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED02BD0202B5CDB00ADD995 /* ExchangeViewModelTests.swift */; };
+		2ED11C9D2025BA0600E59185 /* FormatHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED11C9C2025BA0600E59185 /* FormatHelperTests.swift */; };
+		2ED11CA12026082E00E59185 /* MoneyAmount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED11CA02026082E00E59185 /* MoneyAmount.swift */; };
+		2ED11CA520261B2D00E59185 /* MoneyAmountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED11CA420261B2D00E59185 /* MoneyAmountTests.swift */; };
+		2ED11CA720261B7000E59185 /* DecimalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED11CA620261B7000E59185 /* DecimalExtensions.swift */; };
+		2EDEC9A7201358C300556E3B /* NetworkClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDEC9A6201358C300556E3B /* NetworkClientTests.swift */; };
+		2EDEC9CA20147C6400556E3B /* ExchangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDEC9C920147C6400556E3B /* ExchangeViewController.swift */; };
+		2EDEC9CC20147C6E00556E3B /* ExchangeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDEC9CB20147C6E00556E3B /* ExchangeViewModel.swift */; };
+		2EDEC9CE20147CA200556E3B /* ExchangeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDEC9CD20147CA200556E3B /* ExchangeModel.swift */; };
+		2EF607062020FF1C00846C78 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF607052020FF1C00846C78 /* StringExtensions.swift */; };
+		2EF81501201B91E600A59C58 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF81500201B91E600A59C58 /* Currency.swift */; };
+		2EF81503201B926100A59C58 /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF81502201B926100A59C58 /* ExchangeRate.swift */; };
+		2EF81505201B930C00A59C58 /* MoneyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF81504201B930C00A59C58 /* MoneyStore.swift */; };
+		2EF81507201C6C4E00A59C58 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF81506201C6C4E00A59C58 /* Account.swift */; };
+		2EF81509201C9F8100A59C58 /* Exchange.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EF81508201C9F8100A59C58 /* Exchange.storyboard */; };
+		2EF8150E201CB3BD00A59C58 /* ExchangeCurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF8150D201CB3BD00A59C58 /* ExchangeCurrencyViewModel.swift */; };
+		2EF81510201CBD2C00A59C58 /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF8150F201CBD2C00A59C58 /* KeyboardObserver.swift */; };
+		2EF81513201CCBB900A59C58 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF81512201CCBB900A59C58 /* UIViewExtensions.swift */; };
+		2EF81535201D313700A59C58 /* ExchangeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF81534201D313700A59C58 /* ExchangeAssembly.swift */; };
+		2EF81537201DECBE00A59C58 /* FormatHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF81536201DECBE00A59C58 /* FormatHelper.swift */; };
+		2EF81539201DFA8500A59C58 /* ExchangeCurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EF81538201DFA8500A59C58 /* ExchangeCurrencyModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2EA705EE2011073000922891 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2EA705D12011073000922891 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2EA705D82011073000922891;
+			remoteInfo = Exchange;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E103540202A401200A59FF4 /* FSPagerViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSPagerViewExtensions.swift; sourceTree = "<group>"; };
+		2E103542202A575800A59FF4 /* ExchangeModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeModelTests.swift; sourceTree = "<group>"; };
+		2E103545202A5ABB00A59FF4 /* ExchangeCurrencyViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeCurrencyViewModelTests.swift; sourceTree = "<group>"; };
+		2E1218AC202726B100B9DA4E /* DecimalExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalExtensionsTests.swift; sourceTree = "<group>"; };
+		2E33142B20147EBF007C0167 /* XMLRatesParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLRatesParser.swift; sourceTree = "<group>"; };
+		2E45AB8A2016834300D5F193 /* ExchangeCurrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeCurrencyView.swift; sourceTree = "<group>"; };
+		2E45AB8C2016834B00D5F193 /* ExchangeCurrencyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExchangeCurrencyView.xib; sourceTree = "<group>"; };
+		2E478811201FCED900B8071B /* NoActionsTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoActionsTextField.swift; sourceTree = "<group>"; };
+		2E6F9A05202CEDA9001BCEC8 /* ExchangeTestsUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeTestsUtility.swift; sourceTree = "<group>"; };
+		2E92BAD12017D2B80061DFF1 /* rates_valid.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = rates_valid.xml; sourceTree = "<group>"; };
+		2E92BAD32017DA000061DFF1 /* rates_invalid.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = rates_invalid.xml; sourceTree = "<group>"; };
+		2E9CD5262014EE260050DD43 /* GetExchangeRatesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetExchangeRatesService.swift; sourceTree = "<group>"; };
+		2EA705D92011073000922891 /* Exchange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exchange.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EA705DC2011073000922891 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2EA705E32011073000922891 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2EA705E62011073000922891 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2EA705E82011073000922891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EA705ED2011073000922891 /* ExchangeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExchangeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EA705F32011073000922891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EA705FE2013453200922891 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		2EB538802016862700BAC105 /* XMLRatesParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLRatesParserTests.swift; sourceTree = "<group>"; };
+		2ECA95632027B09200736441 /* FSPagerCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPagerCollectionView.swift; sourceTree = "<group>"; };
+		2ECA95642027B09200736441 /* FSPagerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPagerView.swift; sourceTree = "<group>"; };
+		2ECA95652027B09200736441 /* FSPagerViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPagerViewCell.swift; sourceTree = "<group>"; };
+		2ECA95662027B09200736441 /* FSPagerViewLayoutAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPagerViewLayoutAttributes.swift; sourceTree = "<group>"; };
+		2ECA95672027B09200736441 /* FSPageViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPageViewLayout.swift; sourceTree = "<group>"; };
+		2ECA95682027B09200736441 /* FSPageViewTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSPageViewTransformer.swift; sourceTree = "<group>"; };
+		2ECA95702027B0F500736441 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
+		2ECA95722027B34300736441 /* CarouselCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCell.swift; sourceTree = "<group>"; };
+		2ECA95882028EBA600736441 /* ExchangeSide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeSide.swift; sourceTree = "<group>"; };
+		2ECA958A2028FD4A00736441 /* StringExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionsTests.swift; sourceTree = "<group>"; };
+		2ECA958C2029071500736441 /* MoneyStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyStoreTests.swift; sourceTree = "<group>"; };
+		2ECA958E20290C2700736441 /* AccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTests.swift; sourceTree = "<group>"; };
+		2ED02BD0202B5CDB00ADD995 /* ExchangeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeViewModelTests.swift; sourceTree = "<group>"; };
+		2ED11C9C2025BA0600E59185 /* FormatHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatHelperTests.swift; sourceTree = "<group>"; };
+		2ED11CA02026082E00E59185 /* MoneyAmount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyAmount.swift; sourceTree = "<group>"; };
+		2ED11CA420261B2D00E59185 /* MoneyAmountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyAmountTests.swift; sourceTree = "<group>"; };
+		2ED11CA620261B7000E59185 /* DecimalExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalExtensions.swift; sourceTree = "<group>"; };
+		2EDEC9A6201358C300556E3B /* NetworkClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientTests.swift; sourceTree = "<group>"; };
+		2EDEC9C920147C6400556E3B /* ExchangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeViewController.swift; sourceTree = "<group>"; };
+		2EDEC9CB20147C6E00556E3B /* ExchangeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeViewModel.swift; sourceTree = "<group>"; };
+		2EDEC9CD20147CA200556E3B /* ExchangeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeModel.swift; sourceTree = "<group>"; };
+		2EF607052020FF1C00846C78 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		2EF81500201B91E600A59C58 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		2EF81502201B926100A59C58 /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
+		2EF81504201B930C00A59C58 /* MoneyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyStore.swift; sourceTree = "<group>"; };
+		2EF81506201C6C4E00A59C58 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		2EF81508201C9F8100A59C58 /* Exchange.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Exchange.storyboard; sourceTree = "<group>"; };
+		2EF8150D201CB3BD00A59C58 /* ExchangeCurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeCurrencyViewModel.swift; sourceTree = "<group>"; };
+		2EF8150F201CBD2C00A59C58 /* KeyboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
+		2EF81512201CCBB900A59C58 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		2EF81534201D313700A59C58 /* ExchangeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeAssembly.swift; sourceTree = "<group>"; };
+		2EF81536201DECBE00A59C58 /* FormatHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatHelper.swift; sourceTree = "<group>"; };
+		2EF81538201DFA8500A59C58 /* ExchangeCurrencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeCurrencyModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2EA705D62011073000922891 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EA705EA2011073000922891 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E103544202A5AA500A59FF4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2E103545202A5ABB00A59FF4 /* ExchangeCurrencyViewModelTests.swift */,
+				2ED02BD0202B5CDB00ADD995 /* ExchangeViewModelTests.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2E1218AB202726A100B9DA4E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2E1218AC202726B100B9DA4E /* DecimalExtensionsTests.swift */,
+				2ECA958A2028FD4A00736441 /* StringExtensionsTests.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2E45AB872016808A00D5F193 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2EA705FE2013453200922891 /* NetworkClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2E45AB88201681C500D5F193 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2E47880E201FCCEA00B8071B /* GetExchangeRates */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2E45AB892016833500D5F193 /* ExchangeCurrency */ = {
+			isa = PBXGroup;
+			children = (
+				2E45AB8C2016834B00D5F193 /* ExchangeCurrencyView.xib */,
+				2E45AB8A2016834300D5F193 /* ExchangeCurrencyView.swift */,
+				2EF8150D201CB3BD00A59C58 /* ExchangeCurrencyViewModel.swift */,
+				2EF81538201DFA8500A59C58 /* ExchangeCurrencyModel.swift */,
+			);
+			path = ExchangeCurrency;
+			sourceTree = "<group>";
+		};
+		2E47880E201FCCEA00B8071B /* GetExchangeRates */ = {
+			isa = PBXGroup;
+			children = (
+				2E33142B20147EBF007C0167 /* XMLRatesParser.swift */,
+				2E9CD5262014EE260050DD43 /* GetExchangeRatesService.swift */,
+			);
+			path = GetExchangeRates;
+			sourceTree = "<group>";
+		};
+		2E47880F201FCD5600B8071B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2ECA95872028EA5900736441 /* CarouselView */,
+				2E478811201FCED900B8071B /* NoActionsTextField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2E478810201FCD8700B8071B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2EF8150F201CBD2C00A59C58 /* KeyboardObserver.swift */,
+				2EF81536201DECBE00A59C58 /* FormatHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2E92BACF2017D26D0061DFF1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2EDEC9A6201358C300556E3B /* NetworkClientTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2E92BAD02017D27D0061DFF1 /* Parse */ = {
+			isa = PBXGroup;
+			children = (
+				2EB538802016862700BAC105 /* XMLRatesParserTests.swift */,
+				2E92BAD12017D2B80061DFF1 /* rates_valid.xml */,
+				2E92BAD32017DA000061DFF1 /* rates_invalid.xml */,
+			);
+			path = Parse;
+			sourceTree = "<group>";
+		};
+		2EA705D02011073000922891 = {
+			isa = PBXGroup;
+			children = (
+				2EA705DB2011073000922891 /* Exchange */,
+				2EA705F02011073000922891 /* ExchangeTests */,
+				2EA705DA2011073000922891 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2EA705DA2011073000922891 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2EA705D92011073000922891 /* Exchange.app */,
+				2EA705ED2011073000922891 /* ExchangeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2EA705DB2011073000922891 /* Exchange */ = {
+			isa = PBXGroup;
+			children = (
+				2EDEC9C720147C4900556E3B /* Modules */,
+				2E47880F201FCD5600B8071B /* Views */,
+				2ED11CA220261AFE00E59185 /* Models */,
+				2E45AB872016808A00D5F193 /* Network */,
+				2E45AB88201681C500D5F193 /* Services */,
+				2EF81511201CCAD400A59C58 /* Extensions */,
+				2E478810201FCD8700B8071B /* Helpers */,
+				2ECA95602027B07C00736441 /* ThirdParty */,
+				2EA705DC2011073000922891 /* AppDelegate.swift */,
+				2EA705E32011073000922891 /* Assets.xcassets */,
+				2EA705E52011073000922891 /* LaunchScreen.storyboard */,
+				2EA705E82011073000922891 /* Info.plist */,
+			);
+			path = Exchange;
+			sourceTree = "<group>";
+		};
+		2EA705F02011073000922891 /* ExchangeTests */ = {
+			isa = PBXGroup;
+			children = (
+				2E6F9A05202CEDA9001BCEC8 /* ExchangeTestsUtility.swift */,
+				2E1218AB202726A100B9DA4E /* Extensions */,
+				2ED11CA320261B2000E59185 /* Models */,
+				2E103544202A5AA500A59FF4 /* ViewModels */,
+				2ED11C9B2025B9F400E59185 /* Helpers */,
+				2E92BAD02017D27D0061DFF1 /* Parse */,
+				2E92BACF2017D26D0061DFF1 /* Network */,
+				2EA705F32011073000922891 /* Info.plist */,
+			);
+			path = ExchangeTests;
+			sourceTree = "<group>";
+		};
+		2ECA95602027B07C00736441 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				2ECA95612027B09200736441 /* FSPagerView */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		2ECA95612027B09200736441 /* FSPagerView */ = {
+			isa = PBXGroup;
+			children = (
+				2ECA95632027B09200736441 /* FSPagerCollectionView.swift */,
+				2ECA95642027B09200736441 /* FSPagerView.swift */,
+				2ECA95652027B09200736441 /* FSPagerViewCell.swift */,
+				2ECA95662027B09200736441 /* FSPagerViewLayoutAttributes.swift */,
+				2ECA95672027B09200736441 /* FSPageViewLayout.swift */,
+				2ECA95682027B09200736441 /* FSPageViewTransformer.swift */,
+			);
+			path = FSPagerView;
+			sourceTree = "<group>";
+		};
+		2ECA95872028EA5900736441 /* CarouselView */ = {
+			isa = PBXGroup;
+			children = (
+				2ECA95702027B0F500736441 /* CarouselView.swift */,
+				2ECA95722027B34300736441 /* CarouselCell.swift */,
+			);
+			path = CarouselView;
+			sourceTree = "<group>";
+		};
+		2ED02BD2202B813500ADD995 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2EF81508201C9F8100A59C58 /* Exchange.storyboard */,
+				2EDEC9C920147C6400556E3B /* ExchangeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2ED02BD3202B813A00ADD995 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2EDEC9CB20147C6E00556E3B /* ExchangeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2ED02BD4202B814600ADD995 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2ECA95882028EBA600736441 /* ExchangeSide.swift */,
+				2EF81502201B926100A59C58 /* ExchangeRate.swift */,
+				2EDEC9CD20147CA200556E3B /* ExchangeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2ED11C9B2025B9F400E59185 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2ED11C9C2025BA0600E59185 /* FormatHelperTests.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2ED11CA220261AFE00E59185 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2EF81500201B91E600A59C58 /* Currency.swift */,
+				2ED11CA02026082E00E59185 /* MoneyAmount.swift */,
+				2EF81504201B930C00A59C58 /* MoneyStore.swift */,
+				2EF81506201C6C4E00A59C58 /* Account.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2ED11CA320261B2000E59185 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2ED11CA420261B2D00E59185 /* MoneyAmountTests.swift */,
+				2ECA958C2029071500736441 /* MoneyStoreTests.swift */,
+				2ECA958E20290C2700736441 /* AccountTests.swift */,
+				2E103542202A575800A59FF4 /* ExchangeModelTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2EDEC9C720147C4900556E3B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				2EDEC9C820147C5300556E3B /* Exchange */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		2EDEC9C820147C5300556E3B /* Exchange */ = {
+			isa = PBXGroup;
+			children = (
+				2E45AB892016833500D5F193 /* ExchangeCurrency */,
+				2ED02BD4202B814600ADD995 /* Model */,
+				2ED02BD3202B813A00ADD995 /* ViewModel */,
+				2ED02BD2202B813500ADD995 /* View */,
+				2EF81534201D313700A59C58 /* ExchangeAssembly.swift */,
+			);
+			path = Exchange;
+			sourceTree = "<group>";
+		};
+		2EF81511201CCAD400A59C58 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2EF81512201CCBB900A59C58 /* UIViewExtensions.swift */,
+				2EF607052020FF1C00846C78 /* StringExtensions.swift */,
+				2ED11CA620261B7000E59185 /* DecimalExtensions.swift */,
+				2E103540202A401200A59FF4 /* FSPagerViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2EA705D82011073000922891 /* Exchange */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EA705F62011073000922891 /* Build configuration list for PBXNativeTarget "Exchange" */;
+			buildPhases = (
+				2EA705D52011073000922891 /* Sources */,
+				2EA705D62011073000922891 /* Frameworks */,
+				2EA705D72011073000922891 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Exchange;
+			productName = Exchange;
+			productReference = 2EA705D92011073000922891 /* Exchange.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2EA705EC2011073000922891 /* ExchangeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EA705F92011073000922891 /* Build configuration list for PBXNativeTarget "ExchangeTests" */;
+			buildPhases = (
+				2EA705E92011073000922891 /* Sources */,
+				2EA705EA2011073000922891 /* Frameworks */,
+				2EA705EB2011073000922891 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2EA705EF2011073000922891 /* PBXTargetDependency */,
+			);
+			name = ExchangeTests;
+			productName = ExchangeTests;
+			productReference = 2EA705ED2011073000922891 /* ExchangeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2EA705D12011073000922891 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				TargetAttributes = {
+					2EA705D82011073000922891 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					2EA705EC2011073000922891 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2EA705D82011073000922891;
+					};
+				};
+			};
+			buildConfigurationList = 2EA705D42011073000922891 /* Build configuration list for PBXProject "Exchange" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2EA705D02011073000922891;
+			productRefGroup = 2EA705DA2011073000922891 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2EA705D82011073000922891 /* Exchange */,
+				2EA705EC2011073000922891 /* ExchangeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2EA705D72011073000922891 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EA705E72011073000922891 /* LaunchScreen.storyboard in Resources */,
+				2EA705E42011073000922891 /* Assets.xcassets in Resources */,
+				2EF81509201C9F8100A59C58 /* Exchange.storyboard in Resources */,
+				2E45AB8D2016834B00D5F193 /* ExchangeCurrencyView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EA705EB2011073000922891 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E92BAD22017D2B80061DFF1 /* rates_valid.xml in Resources */,
+				2E92BAD42017DA000061DFF1 /* rates_invalid.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2EA705D52011073000922891 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EDEC9CE20147CA200556E3B /* ExchangeModel.swift in Sources */,
+				2EF81507201C6C4E00A59C58 /* Account.swift in Sources */,
+				2EF81535201D313700A59C58 /* ExchangeAssembly.swift in Sources */,
+				2EA705DD2011073000922891 /* AppDelegate.swift in Sources */,
+				2EF8150E201CB3BD00A59C58 /* ExchangeCurrencyViewModel.swift in Sources */,
+				2ECA95732027B34300736441 /* CarouselCell.swift in Sources */,
+				2ECA95712027B0F500736441 /* CarouselView.swift in Sources */,
+				2EF607062020FF1C00846C78 /* StringExtensions.swift in Sources */,
+				2ECA956A2027B09200736441 /* FSPagerCollectionView.swift in Sources */,
+				2ED11CA12026082E00E59185 /* MoneyAmount.swift in Sources */,
+				2E33142C20147EBF007C0167 /* XMLRatesParser.swift in Sources */,
+				2E478812201FCED900B8071B /* NoActionsTextField.swift in Sources */,
+				2ECA956E2027B09200736441 /* FSPageViewLayout.swift in Sources */,
+				2E45AB8B2016834300D5F193 /* ExchangeCurrencyView.swift in Sources */,
+				2EF81505201B930C00A59C58 /* MoneyStore.swift in Sources */,
+				2EF81537201DECBE00A59C58 /* FormatHelper.swift in Sources */,
+				2ED11CA720261B7000E59185 /* DecimalExtensions.swift in Sources */,
+				2EF81539201DFA8500A59C58 /* ExchangeCurrencyModel.swift in Sources */,
+				2EDEC9CC20147C6E00556E3B /* ExchangeViewModel.swift in Sources */,
+				2EDEC9CA20147C6400556E3B /* ExchangeViewController.swift in Sources */,
+				2ECA956C2027B09200736441 /* FSPagerViewCell.swift in Sources */,
+				2ECA956D2027B09200736441 /* FSPagerViewLayoutAttributes.swift in Sources */,
+				2EF81510201CBD2C00A59C58 /* KeyboardObserver.swift in Sources */,
+				2ECA95892028EBA600736441 /* ExchangeSide.swift in Sources */,
+				2EF81513201CCBB900A59C58 /* UIViewExtensions.swift in Sources */,
+				2ECA956F2027B09200736441 /* FSPageViewTransformer.swift in Sources */,
+				2ECA956B2027B09200736441 /* FSPagerView.swift in Sources */,
+				2EF81501201B91E600A59C58 /* Currency.swift in Sources */,
+				2E9CD5272014EE260050DD43 /* GetExchangeRatesService.swift in Sources */,
+				2E103541202A401200A59FF4 /* FSPagerViewExtensions.swift in Sources */,
+				2EF81503201B926100A59C58 /* ExchangeRate.swift in Sources */,
+				2EA705FF2013453200922891 /* NetworkClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2EA705E92011073000922891 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ECA958D2029071500736441 /* MoneyStoreTests.swift in Sources */,
+				2ED02BD1202B5CDB00ADD995 /* ExchangeViewModelTests.swift in Sources */,
+				2ECA958B2028FD4A00736441 /* StringExtensionsTests.swift in Sources */,
+				2E103543202A575800A59FF4 /* ExchangeModelTests.swift in Sources */,
+				2ED11CA520261B2D00E59185 /* MoneyAmountTests.swift in Sources */,
+				2ED11C9D2025BA0600E59185 /* FormatHelperTests.swift in Sources */,
+				2EB538812016862700BAC105 /* XMLRatesParserTests.swift in Sources */,
+				2E103546202A5ABB00A59FF4 /* ExchangeCurrencyViewModelTests.swift in Sources */,
+				2E6F9A06202CEDA9001BCEC8 /* ExchangeTestsUtility.swift in Sources */,
+				2ECA958F20290C2700736441 /* AccountTests.swift in Sources */,
+				2EDEC9A7201358C300556E3B /* NetworkClientTests.swift in Sources */,
+				2E1218AD202726B100B9DA4E /* DecimalExtensionsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2EA705EF2011073000922891 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2EA705D82011073000922891 /* Exchange */;
+			targetProxy = 2EA705EE2011073000922891 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2EA705E52011073000922891 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EA705E62011073000922891 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2EA705F42011073000922891 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2EA705F52011073000922891 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2EA705F72011073000922891 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C685RA3JCE;
+				INFOPLIST_FILE = Exchange/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tgalimov.exchange;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		2EA705F82011073000922891 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C685RA3JCE;
+				INFOPLIST_FILE = Exchange/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tgalimov.exchange;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		2EA705FA2011073000922891 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C685RA3JCE;
+				INFOPLIST_FILE = ExchangeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ExchangeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Exchange.app/Exchange";
+			};
+			name = Debug;
+		};
+		2EA705FB2011073000922891 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C685RA3JCE;
+				INFOPLIST_FILE = ExchangeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ExchangeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Exchange.app/Exchange";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2EA705D42011073000922891 /* Build configuration list for PBXProject "Exchange" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EA705F42011073000922891 /* Debug */,
+				2EA705F52011073000922891 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EA705F62011073000922891 /* Build configuration list for PBXNativeTarget "Exchange" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EA705F72011073000922891 /* Debug */,
+				2EA705F82011073000922891 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EA705F92011073000922891 /* Build configuration list for PBXNativeTarget "ExchangeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EA705FA2011073000922891 /* Debug */,
+				2EA705FB2011073000922891 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2EA705D12011073000922891 /* Project object */;
+}

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o7R-gc-RmU">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Exchange View Controller-->
+        <scene sceneID="OGK-sn-f6B">
+            <objects>
+                <viewController storyboardIdentifier="ExchangeViewController" id="M1z-cm-cJH" customClass="ExchangeViewController" customModule="Exchange" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K6V-Wm-6qC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7v0-Al-cr2" customClass="CarouselView" customModule="Exchange" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="301.5" width="375" height="301.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3zC-UL-0Ib" customClass="CarouselView" customModule="Exchange" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="301.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3zC-UL-0Ib" firstAttribute="leading" secondItem="YIn-h4-dcu" secondAttribute="leading" id="B1o-HQ-ayW"/>
+                            <constraint firstItem="3zC-UL-0Ib" firstAttribute="top" secondItem="YIn-h4-dcu" secondAttribute="top" id="IlG-Tq-UAI"/>
+                            <constraint firstItem="7v0-Al-cr2" firstAttribute="leading" secondItem="YIn-h4-dcu" secondAttribute="leading" id="Us9-On-TcK"/>
+                            <constraint firstItem="7v0-Al-cr2" firstAttribute="top" secondItem="3zC-UL-0Ib" secondAttribute="bottom" id="hXy-lP-ZUi"/>
+                            <constraint firstItem="7v0-Al-cr2" firstAttribute="height" secondItem="3zC-UL-0Ib" secondAttribute="height" id="p7s-Ld-NWs"/>
+                            <constraint firstItem="YIn-h4-dcu" firstAttribute="trailing" secondItem="3zC-UL-0Ib" secondAttribute="trailing" id="pdV-i8-9Ps"/>
+                            <constraint firstItem="YIn-h4-dcu" firstAttribute="bottom" secondItem="7v0-Al-cr2" secondAttribute="bottom" id="rjw-64-rUp"/>
+                            <constraint firstItem="YIn-h4-dcu" firstAttribute="trailing" secondItem="7v0-Al-cr2" secondAttribute="trailing" id="xBB-Ld-vRT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YIn-h4-dcu"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="c5E-jh-mNd">
+                        <barButtonItem key="rightBarButtonItem" title="Exchange" id="rLa-Ww-hyc"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="bottomConstraint" destination="rjw-64-rUp" id="IAm-a2-EUZ"/>
+                        <outlet property="carouselViewFrom" destination="3zC-UL-0Ib" id="tTV-K8-hy9"/>
+                        <outlet property="carouselViewTo" destination="7v0-Al-cr2" id="KPy-de-C0m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HlG-4I-cpD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="383.19999999999999" y="167.76611694152925"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4Qd-Ge-fKd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="o7R-gc-RmU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="A50-Kt-MHi">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="M1z-cm-cJH" kind="relationship" relationship="rootViewController" id="kql-gM-hoc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tIP-e5-neM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-359" y="168"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,19 @@
+xcuserdata
+
+# A hidden file created by the Mac OS X Finder.
+.DS_Store
+
+# build directories
+**/build/*
+out/*
+
+# XCode user data
+**.pbxuser
+**.mode?v?
+**.perspectivev?
+**.xcuserstate
+**.xccheckout
+**/xcuserdata/*
+**.xcbaseline
+**.xcscmblueprint
+
